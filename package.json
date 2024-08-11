@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.1",
+    "notyf": "^3.10.0"
+  },
+  "scripts": {
+    "build": "bun build ./src/ryanair.ts --outfile lib/ryanair.js --watch"
+  }
+}
