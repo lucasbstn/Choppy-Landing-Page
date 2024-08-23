@@ -150,6 +150,7 @@
 		href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
 		rel="stylesheet"
 	/>
+	<title>Ryanair - Verified Flights</title>
 </svelte:head>
 <Toaster position="bottom-center" toastOptions={{ duration: 3000 }} />
 <main>
