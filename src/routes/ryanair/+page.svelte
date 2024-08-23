@@ -114,7 +114,7 @@
 		disableSubmit = true;
 
 		const { error } = await toast.promise(
-			supabase.functions.invoke('ryanair_verified_flights', {
+			supabase.functions.invoke('ryanair_verified_flights/text', {
 				body: flights
 			}),
 			{
@@ -124,11 +124,13 @@
 			}
 		);
 
+		disableSubmit = false;
+
 		if (!error) {
 			flights = '';
+		} else {
+			throw error;
 		}
-
-		disableSubmit = false;
 	};
 
 	let user: User | undefined;
